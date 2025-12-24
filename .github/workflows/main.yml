@@ -4,7 +4,7 @@ name: Schedule Web Access
 on:
   schedule:
     # 定时任务表达式，每2小时执行一次
-    - cron: '0 */2 * * *'
+    - cron: '0 */5 * * *'
 
 jobs:
   access-website:
@@ -12,4 +12,4 @@ jobs:
     steps:
       - name: Access Website
         run: |
-          curl http://tvi.ccwu.cc/tv/1.php
+          curl http://iptv.us.ci/tv/1.php
